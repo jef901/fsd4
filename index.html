@@ -7,6 +7,99 @@
     <title>Ejercicio Html</title>
   </head>
   <body>
-    <h1>Prueba de sitio</h1>
+    <header>
+      <h1>Ejercicio 1 HTML CSS</h1>
+    </header>
+    <main>
+      <section>
+        <h3>Lista de Tareas</h3>
+        <ol>
+          <li>Levantarme</li>
+          <li>Ir al banio</li>
+          <li>Desayunar</li>
+          <li>Ir al trabajo</li>
+          <li>Volver del trabajo</li>
+          <li>Cenar</li>
+          <li>Dormir</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Gastos Mensuales</h3>
+        <table border="1">
+          <tr>
+            <th>Fecha</th>
+            <th>Metodo de Pago</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+          </tr>
+          <tr>
+            <td>08/07</td>
+            <td>tarjeta</td>
+            <td>tv Cable</td>
+            <td>$1700</td>
+          </tr>
+          <tr>
+            <td>10/07</td>
+            <td>tarjeta</td>
+            <td>Alquiler</td>
+            <td>$20000</td>
+          </tr>
+          <tr>
+            <td>15/07</td>
+            <td>tarjeta</td>
+            <td>Luz</td>
+            <td>$2500</td>
+          </tr>
+
+          <tr>
+            <td>19/07</td>
+            <td>efectivo</td>
+            <td>Inpuesto</td>
+            <td>$800</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3>Audio video Imagen</h3>
+        <audio controls>
+          <source src="cat.wav" type="audio/x-wav" />
+        </audio>
+        <br />
+        <img src="cat.jpg" alt="gato de bengala" />
+        <br />
+        <video width="400px" height="300px" controls>
+          <source src="cat.mp4" />
+        </video>
+      </section>
+      <section>
+        <h3>Formulario</h3>
+        <form action="#">
+          <label for="nombre">Nombre</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br />
+          <label for="apellido">Apellido</label><br />
+          <input type="text" id="apellido" name="apellido" required /><br />
+          <label for="apellido">Email</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="fecha-nac">Fecha nacimiento</label><br />
+          <input type="date" id="fecha-nac" name="fecha cumple" required /><br />
+          <label for="cars">Deporte Preferido</label>
+          <select name="deporte" id="deporte">
+            <option value="futbol">futbol</option>
+            <option value="basquetbol">basquetbol</option>
+            <option value="ciclismo">ciclismo</option>
+            <option value="natacion">natacion</option>
+          </select>
+          <br />
+          <br />
+          <label for="comentario">Biografia</label
+          ><br /><br />
+          <textarea rows="5" cols="30" id="comentario" name="comentario">
+         Ingrese su biografia
+	       </textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
