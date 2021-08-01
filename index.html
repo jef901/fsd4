@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ejercicio Html</title>
   </head>
   <body>
@@ -11,10 +12,10 @@
       <h1>Ejercicio 1 HTML CSS</h1>
     </header>
     <main>
-      <section>
-        <h3>Lista de Tareas</h3>
+      <section class="section1">
+        <h2>Lista de Tareas</h2>
         <ol>
-          <li>Levantarme</li>
+          <li>Despertar</li>
           <li>Ir al banio</li>
           <li>Desayunar</li>
           <li>Ir al trabajo</li>
@@ -23,9 +24,9 @@
           <li>Dormir</li>
         </ol>
       </section>
-      <section>
-        <h3>Gastos Mensuales</h3>
-        <table border="1">
+      <section class="section2">
+        <h2>Gastos Mensuales</h2>
+        <table>
           <tr>
             <th>Fecha</th>
             <th>Metodo de Pago</th>
@@ -59,20 +60,20 @@
           </tr>
         </table>
       </section>
-      <section>
-        <h3>Audio video Imagen</h3>
+      <section class="section3">
+        <h2>Audio, Imagen, Video</h2>
         <audio controls>
           <source src="cat.wav" type="audio/x-wav" />
         </audio>
-        <br />
+
         <img src="cat.jpg" alt="gato de bengala" />
-        <br />
+
         <video width="400px" height="300px" controls>
           <source src="cat.mp4" />
         </video>
       </section>
-      <section>
-        <h3>Formulario</h3>
+      <section class="section4">
+        <h2>Formulario</h2>
         <form action="#">
           <label for="nombre">Nombre</label><br />
           <input type="text" id="nombre" name="nombre" required /><br />
@@ -81,7 +82,12 @@
           <label for="apellido">Email</label><br />
           <input type="email" id="email" name="email" required /><br />
           <label for="fecha-nac">Fecha nacimiento</label><br />
-          <input type="date" id="fecha-nac" name="fecha cumple" required /><br />
+          <input
+            type="date"
+            id="fecha-nac"
+            name="fecha cumple"
+            required
+          /><br />
           <label for="cars">Deporte Preferido</label>
           <select name="deporte" id="deporte">
             <option value="futbol">futbol</option>
@@ -91,15 +97,20 @@
           </select>
           <br />
           <br />
-          <label for="comentario">Biografia</label
-          ><br /><br />
+          <label for="comentario">Biografia</label><br /><br />
           <textarea rows="5" cols="30" id="comentario" name="comentario">
          Ingrese su biografia
-	       </textarea>
+	       </textarea
+          >
           <br />
           <input type="submit" value="Submit" />
         </form>
       </section>
     </main>
+    <footer>
+      <p>&copyopyright Josecito</p>
+      <p>Barrio Sur Montevideo</p>
+      <p>No uso redes sociales</p>
+    </footer>
   </body>
 </html>
