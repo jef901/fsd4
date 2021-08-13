@@ -1,115 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Ejercicio Html</title>
+    <title>Website 1</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Ejercicio 1 HTML CSS</h1>
-    </header>
-    <main>
-      <section class="section1">
-        <h2>Lista de Tareas</h2>
-        <ol>
-          <li>Despertar</li>
-          <li>Ir al banio</li>
-          <li>Desayunar</li>
-          <li>Ir al trabajo</li>
-          <li>Volver del trabajo</li>
-          <li>Cenar</li>
-          <li>Dormir</li>
-        </ol>
-      </section>
-      <section class="section2">
-        <h2>Gastos Mensuales</h2>
-        <table>
-          <tr>
-            <th>Fecha</th>
-            <th>Metodo de Pago</th>
-            <th>Tipo</th>
-            <th>Cantidad</th>
-          </tr>
-          <tr>
-            <td>08/07</td>
-            <td>tarjeta</td>
-            <td>tv Cable</td>
-            <td>$1700</td>
-          </tr>
-          <tr>
-            <td>10/07</td>
-            <td>tarjeta</td>
-            <td>Alquiler</td>
-            <td>$20000</td>
-          </tr>
-          <tr>
-            <td>15/07</td>
-            <td>tarjeta</td>
-            <td>Luz</td>
-            <td>$2500</td>
-          </tr>
-
-          <tr>
-            <td>19/07</td>
-            <td>efectivo</td>
-            <td>Inpuesto</td>
-            <td>$800</td>
-          </tr>
-        </table>
-      </section>
-      <section class="section3">
-        <h2>Audio, Imagen, Video</h2>
-        <audio controls>
-          <source src="cat.wav" type="audio/x-wav" />
-        </audio>
-
-        <img src="cat.jpg" alt="gato de bengala" />
-
-        <video width="400px" height="300px" controls>
-          <source src="cat.mp4" />
-        </video>
-      </section>
-      <section class="section4">
-        <h2>Formulario</h2>
-        <div>
-          <div class="form">
-            <form action="#">
-              <label for="nombre">Nombre</label><br />
-              <input type="text" id="nombre" name="nombre" required /><br />
-              <label for="apellido">Apellido</label><br />
-              <input type="text" id="apellido" name="apellido" required /><br />
-              <label for="apellido">Email</label><br />
-              <input type="email" id="email" name="email" required /><br />
-              <label for="fecha-nac">Fecha nacimiento</label><br />
-              <input type="date" id="fecha-nac" name="fecha-nac" required/><br />
-              <label for="cars">Deporte Preferido</label>
-              <select name="deporte" id="deporte">
-                <option value="futbol">futbol</option>
-                <option value="basquetbol">basquetbol</option>
-                <option value="ciclismo">ciclismo</option>
-                <option value="natacion">natacion</option>
-              </select>
-              <br />
-              <br />
-              <label for="comentario">Biografia</label><br /><br />
-              <textarea rows="5" cols="30" id="comentario" name="comentario">
-         Ingrese su biografia
-	       </textarea
-              >
-              <br />
-              <input type="submit" value="Enviar" />
-            </form>
-          </div>
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="container flex">
+          <h1 class="logo">LOGO</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="docs.html">Docs</a></li>
+            </ul>
+          </nav>
         </div>
-      </section>
-    </main>
+      </div>
+    </header>
+    <div class="section">
+      <h1>HERO</h1>
+    </div>
+    <div class="section">
+      <h1>INFO Cards x 4</h1>
+    </div>
+    <div class="section">
+      <h1>Gallery</h1>
+    </div>
+    <div class="section">
+      <h1>Content 1</h1>
+    </div>
+    <div class="section">
+      <h1>Content 2</h1>
+    </div>
+    <div class="section">
+      <h1>Content 3</h1>
+    </div>
     <footer>
-      <p>&copyopyright Josecito</p>
-      <p>Barrio Sur Montevideo</p>
-      <p>No uso redes sociales</p>
+      <h1>Footer</h1>
     </footer>
+    <script src="app1.js"></script>
   </body>
 </html>

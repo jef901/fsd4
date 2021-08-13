@@ -1,90 +1,64 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+html,
+body {
   margin: 0;
   padding: 0;
-}
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h1 {
-  color: red;
-}
-h2 {
-  color: orangered;
-  margin: 20px;
-  text-decoration: underline;
+  font-family: "Lato", sans-serif;
 }
 
-header {
-  background-color: darkgray;
-  padding: 50px;
+ul {
+  list-style-type: none;
 }
-.section1 {
-  background-color: aqua;
-  padding: 50px;
+a {
+  text-decoration: none;
+  color: #333;
 }
-.section2 {
-  background-color: azure;
-  padding: 50px;
+.navbar {
+  background-color: blue;
+  color: #fff;
+  height: 80px;
 }
-.section3 {
-  background-color: chartreuse;
-  padding: 50px;
+.navbar ul {
+  display: flex;
 }
-.section4 {
-  background-color: green;
-  padding: 50px;
-}
-
-ol {
-  color: blue;
-}
-/*me gusto y lo afane*/
-/*retoque tamanio y alineamento del campo cantidad*/
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 50%;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-td:last-child {
-  text-align: right;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-img {
-  margin: 0px 10px;
-  border: 3px solid;
-}
-footer {
-  height: 70px;
-  background-color: black;
-  text-align: center;
+.navbar a {
   color: white;
   padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px white solid;
+}
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.form {
-  padding: 30px;
-  background-color: grey;
-  width: 290px;
+.section {
+  border: 1px solid #ddd;
+  padding: 20px 0;
+  background: #eee;
 }
 
-input,
-textarea,select {
-  display: block;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  padding: 5px;
+.mainHeader {
+  position: fixed;
+  background-color: black;
   width: 100%;
-  margin-top: 3px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 5px;
+}
+
+@media all and (max-width: 760px) {
+  body {
+    background-color: red;
+  }
 }
