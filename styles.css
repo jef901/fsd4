@@ -50,16 +50,49 @@ a {
   padding: 20px 0;
   background: #666;
 }
-
-.hero {
-  color: white;
-  padding: 20px;
-  font-size: 1.5em;
-  background: #222;
+/* jumbotron */
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  margin: auto;
+  border: 5px solid white;
   text-align: center;
+  border-radius: 10px;
 }
-.hero h2 {
+.jumbotron h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: black;
+  padding: 20px;
+}
+.jumbotron h3 {
   font-size: 2em;
+  color: #222;
+}
+.jumbotron-imagen {
+  background-image: url("http://lorempixel.com/400/300/abstract/3/");
+  background-size: cover;
+  padding: 80px;
+}
+/* about */
+.row {
+  display: flex;
+}
+.col {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.texto {
+  background: white;
+  font-size: 1.2em;
+}
+.page > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding: 8px;
+  font-size: 3em;
 }
 /*  card */
 .card-container {
@@ -105,8 +138,54 @@ a {
   transform: scale(1.05);
   transition: all 1s ease;
 }
+/* find de Card */
+/* form */
+.miForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 500px;
+  text-align: left;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.miForm .subject,
+.miForm .message {
+  width: 80%;
+  margin: 0 auto;
+}
+#email,
+#name,
+#subject {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+}
+#message {
+  width: 100%;
+  font-size: 1.5em;
+}
+.message button{
+  height: 70px;
+  width:100%;
+  background-color: salmon;
+  font-size: 2em;
+}
+
+label {
+  color:white;
+  display: block;
+  padding: 10;
+  margin: 10;
+}
+/*fin form */
 @media all and (max-width: 760px) {
   body {
     background-color: red;
+  }
+  .row {
+    flex-direction: column;
   }
 }
