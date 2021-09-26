@@ -1,8 +1,8 @@
 Entrega proyecto javascript
 
-El proyecto es un carrito de compras que ire haciendo desde front end backend a React
+El proyecto es un carrito de compras que ire haciendo desde front, backend a React
 
-Utiliza para guardar los datos del front el localStorage, gurdando datos del
+Utiliza para guardar los datos del front el localStorage, guardando datos del
 carrito en agregando items en el localStorage prdEnCarrito los productos que se agregaron
 al carrtio carritoCantidad la cantidad de productos del carrito totalCost es el total del
 costo del carrito.
